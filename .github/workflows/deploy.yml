@@ -1,4 +1,4 @@
-name: HTML
+name: DeployWithValidation
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  validate:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,10 +18,13 @@ jobs:
         with:
           java-version: 8
           architecture: x64
+      - name: Installing dependencies
       - run: npm ci
+      - name: Bulding app
       - run: npm run build
+      - name: Run HTML Validation
       - run: npm run html
-      - name: Deploy to Heroku
+      - name: Deploying to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}

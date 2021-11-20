@@ -1,0 +1,22 @@
+{
+  "name": "tailwind-vite-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "html": "node-w3c-validator -i ./dist/index.html -f lint -ev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "node-w3c-validator": "^2.0.1",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.6.14"
+  }
+}

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "html": "node-w3c-validator -i ./dist/index.html -f lint -ev"
+    "html": "node-w3c-validator -i ./dist/index.html -f lint -ev",
+    "start": "vite --port $PORT"
   },
   "keywords": [],
   "author": "",

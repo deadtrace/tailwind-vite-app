@@ -39,5 +39,6 @@ jobs:
         env:
           HEROKU_APP_NAME: ${{ secrets.HEROKU_APP_NAME }}
       - run: git filter-branch -- --all
+      - run: git pull heroku
       - name: Push to Heroku
         run: git push heroku master

@@ -19,11 +19,11 @@ jobs:
           java-version: 8
           architecture: x64
       - name: Installing dependencies
-      - run: npm ci
+        run: npm ci
       - name: Bulding app
-      - run: npm run build
-      - name: Run HTML Validation
-      - run: npm run html
+        run: npm run build
+      - name: Running HTML Validation
+        run: npm run html
       - name: Deploying to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./index.html"],
+  purge: ["./index.html", "./src/**/*.jsx"],
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: {
         slab: "'Roboto Slab', serif",
         roboto: "'Roboto', sans-serif",
+        pro: "'Source Sans Pro', sans-serif;",
       },
       borderRadius: {
         bord: "100px",

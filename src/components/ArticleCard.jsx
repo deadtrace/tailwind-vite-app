@@ -5,7 +5,7 @@ const ArticleCard = (props) => {
   const { title, content, imageURL, category, date, source } = props.article;
   return (
     <div className="h-full">
-      <div className="h-48 relative rounded-t-2xl overflow-hidden">
+      <div className="h-48 tablet:h-40 desktop:h-96 relative rounded-t-2xl overflow-hidden">
         <img
           src={imageURL}
           alt={title}

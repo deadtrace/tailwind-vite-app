@@ -12,7 +12,7 @@ const ArticleCard = (props) => {
           className="h-full w-full object-cover object-center"
         />
         <span className="py-2 px-3 text-black font-roboto text-sm leading-6 bg-white block absolute top-4 left-4 rounded-xl">
-          Природа
+          {category}
         </span>
         <div className="p-3 absolute bg-white right-4 top-4 rounded-xl cursor-pointer">
           <svg
